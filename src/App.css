@@ -17,9 +17,24 @@
 
 .fact-container {
   color: #222;
-  font-size: 2em;
-  max-width: 50%;
+  font-size: 1.4em;
   line-height: 2em;
+  width: 90%;
+}
+
+@media(min-width: 500px) {
+  .fact-container {
+    font-size: 1.7em;
+    line-height: 2em;
+    width: 70%;
+  }
+}
+@media(min-width: 600px) {
+  .fact-container {
+    font-size: 2em;
+    line-height: 2em;
+    width: 60%;
+  }
 }
 
 .fact em {
