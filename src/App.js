@@ -7,11 +7,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = { fact: generateRandomFact() };
-
-    this.boundNewFact = () => this.newFact();
   }
 
-  newFact() {
+  newFact = () => {
     this.setState({ fact: generateRandomFact() });
   }
 
@@ -30,7 +28,7 @@ class App extends Component {
           </div>
         </div>
 
-        <button class="newFact" onClick={this.boundNewFact}>don't believe it?</button>
+        <button class="newFact" onClick={this.newFact}>don't believe it?</button>
 
         <div className="sosumi">
           Inspired by <a href="https://xkcd.com/1930">xkcd 1930</a>.
